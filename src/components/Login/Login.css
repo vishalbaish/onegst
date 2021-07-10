@@ -1,0 +1,23 @@
+.form {
+    background-color: #f8f8f8;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+
+.form_container {
+    padding: 100px;
+    text-align: center;
+    background-color: #B8DFD8;
+    border-radius: 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px;
+}
+
+.form_text {
+    margin-bottom: 20px;
+}
+
+.button {
+    margin: 10px !important;
+}
