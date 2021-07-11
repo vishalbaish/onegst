@@ -7,10 +7,10 @@ import { auth } from '../../firebase'
 
 function Sidebar({ isOpen, toggle}) {
 
-    const sidebar = isOpen ? "sidebar_container2" : "sidebar_container";
+    const sidebar = isOpen ? "open" : "";
 
     return (
-        <div className={sidebar} onClick={toggle}>
+        <div className={`"sidebar_container" ${sidebar}`} onClick={toggle}>
             <IconButton style={{ marginLeft: "auto"}} onClick={toggle}>
                 <CloseIcon />
             </IconButton>
