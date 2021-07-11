@@ -25,16 +25,6 @@ export default function Message({ amount, transactionDate, creatorId, subType, t
       CheckTypeForCreator = typeForCreator===0 ? true : false;// check if TypeForCreator is money or goods
     }
 
-    // var check = ({ boolean, type, subtype }) => {
-    //   if (boolean) {
-    //     // myUser this is my transaction
-    //     // return transaction labels
-    //     // isInvoice
-    //     // isLeftCard
-    //   } else {
-
-    //   }
-    // }
 
     var type = "";
     var icon = "";
@@ -46,7 +36,7 @@ export default function Message({ amount, transactionDate, creatorId, subType, t
         label = "Payment Out"
         color= "orange"
     } else if (!CheckSubType && CheckTypeForCreator) {//when subtype is recieve and typeforCreator is money
-        type = "invoice_right";//show invoice on left side
+        type = "invoice_right";//show invoice on right side
         icon = "pdf";//show pdf icon
         label = "Sale Invoice"
         color= "orange"
@@ -81,12 +71,6 @@ export default function Message({ amount, transactionDate, creatorId, subType, t
              <CameraAltIcon /> : 
              <PictureAsPdfIcon/>} 
           </IconButton>  
-          {/* { cancelled ? // check if cancelled if true and show cancel icon, if not true show nothing
-                     <IconButton style={{ color: "#fff"}}>
-                         <BlockIcon />
-                     </IconButton> :
-                 null
-           }  */}
       </CardContent>
     </Card>
     </div>
